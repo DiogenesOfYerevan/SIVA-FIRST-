@@ -1,3 +1,4 @@
-# SIVA-FIRST 
-Чистый новый дом для СИВЫ.
-Начинаем с нуля, правильно.
+# SIVA FIRST (REV-4.3-DIGITAL-4096D)
+Silicon Vacuum
+Frequency Interference
+Resonator Sieve Technology
