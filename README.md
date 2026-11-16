@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="https://githubusercontent.com" alt="KAPITAL NEMO" width="600"/>
-</div>
+
 <div align="center">
   <img src="Изображение.png" alt="KAPITAL NEMO" width="600"/>
 </div>
