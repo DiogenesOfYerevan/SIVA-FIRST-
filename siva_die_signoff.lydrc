@@ -29,9 +29,9 @@ dimple.non_rectangles.output("DRC_DIMPLE_IS_NOT_RECT", "Dimple geometry must be 
 dimple.not(m6).output("DRC_DIMPLE_OUTSIDE", "Dimple layer detected outside the active M6 roof zone")
 
 # --- 2.3 ANTI-COLLAPSE FIX (REV-4.3.3) ---
-# FIX Капкана 1: Зазор 87.5um > 44um, даем допуск 0.1um на Docker/float глюк
+# FIX Trap 1: Clearance 87.5um > 44um; adding 0.1um tolerance for Docker/floating-point precision artifacts
 m6.enclosing(dimple, 43.9.um).output("DRC_DIMPLE_MARGIN", "Dimple to M6 edge < 44um - Roof collapse risk")
-# FIX Капкана 2: Зазор 85.0um ровно на границе DBU, даем допуск 0.1um
+# FIX Trap 2: Spacing 85.0um sits right on the DBU boundary; adding 0.1um tolerance
 dimple.space(84.9.um).output("DRC_DIMPLE_SPACE", "Dimple pitch < 85um - Roof collapse risk")
 
 # --- 3. PERIPHERAL CONTOUR ---
