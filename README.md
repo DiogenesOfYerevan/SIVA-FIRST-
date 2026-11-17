@@ -1,7 +1,5 @@
 
-<div align="center">
-  <img src="cover.png.png" alt="KAPITAL NEMO" width="600"/>
-</div>
+![ KAPITAL NEMO ](cover.png.png)
 
 
 # KAPITAL NEMO
