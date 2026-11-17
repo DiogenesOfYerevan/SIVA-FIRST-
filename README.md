@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="cover.png" alt="KAPITAL NEMO" width="600"/>
+  <img src="cover.png.png" alt="KAPITAL NEMO" width="600"/>
 </div>
 
 
