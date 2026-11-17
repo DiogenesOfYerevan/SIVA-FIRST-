@@ -1,5 +1,5 @@
 
-![ KAPITAL NEMO ](cover.png.png)
+![ KAPITAL NEMO ](cover.png)
 
 
 # KAPITAL NEMO
