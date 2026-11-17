@@ -65,7 +65,9 @@ Held hostage inside the "Barrel"—a pod levitating over an Armenian ravine—is
 
 ### ENGINEERING & HARDWARE FILES
 
-Live Site: https://diogenesofyerevan.github.io/SIVAFIRST/
+**[Live Site](https://diogenesofyerevan.github.io/SIVAFIRST/)** | **[GitHub Repository](https://github.com/DiogenesOfYerevan/SIVAFIRST)**
+
+### ENGINEERING & HARDWARE FILES
 
 - [generate_die.py](https://github.com/DiogenesOfYerevan/SIVAFIRST/blob/main/generate_die.py) — GDSII layout generation script
 - [config_die.json](https://github.com/DiogenesOfYerevan/SIVAFIRST/blob/main/config_die.json) — Die configuration parameters
