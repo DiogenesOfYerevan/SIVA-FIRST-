@@ -63,7 +63,7 @@ Held hostage inside the "Barrel"—a pod levitating over an Armenian ravine—is
 - **[SIVA_FIRST_Legal_Master_Package.pdf](SIVA_FIRST_Legal_Master_Package.pdf)**
 - **[CERN OHL-S v2 Licence](cern_ohl_s_v2.pdf)**
 
-### ENGINEERING & HARDWARE FILES
+
 
 **[Live Site](https://diogenesofyerevan.github.io/SIVAFIRST/)** | **[GitHub Repository](https://github.com/DiogenesOfYerevan/SIVAFIRST)**
 
