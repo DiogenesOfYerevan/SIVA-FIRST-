@@ -56,8 +56,16 @@ Bored by the world’s smug satiety, rogue intellectual Diogenes teams up with t
 Held hostage inside the "Barrel"—a pod levitating over an Armenian ravine—is Lyonya Musk, Earth’s top techno-optimist. Khorovats is smoking on the table, homemade mulberry vodka is poured, and his satellite phone is deadlocked by the chip's perimeter. Musk must raise a glass and face a simple truth: two times two is always four. Everything else—bloated valuations, debt, compound interest, and wasted heat—is slated for immediate recuperation.
 
 ---
-
 ### DOCUMENTS & SPECIFICATIONS
-* **[KAPITAL NEMO (Full Illustrated PDF)](KAPITAL%20NEMO.pdf)**
-* **[SIVA_FIRST_REV-4.3-DIGITAL-4096D_Spec_and_Manual.pdf](SIVA_FIRST_REV-4.3-DIGITAL-4096D_Spec_and_Manual.pdf)**
-* **[CERN OHL-S v2 Licence](cern_ohl_s_v2.pdf)**
+
+- **[KAPITAL NEMO (Full Illustrated PDF)](KAPITAL%20NEMO.pdf)**
+- **[SIVA_FIRST_REV-4.3-DIGITAL-4096D_Spec_and_Manual.pdf](SIVA_FIRST_REV-4.3-DIGITAL-4096D_Spec_and_Manual.pdf)**
+- **[SIVA_FIRST_Legal_Master_Package.pdf](SIVA_FIRST_Legal_Master_Package.pdf)**
+- **[CERN OHL-S v2 Licence](cern_ohl_s_v2.pdf)**
+
+### ENGINEERING & HARDWARE FILES
+
+- **[generate_die.py](generate_die.py)** — GDSII layout generation script
+- **[config_die.json](config_die.json)** — Die configuration parameters
+- **[siva_die_signoff.lydrc](siva_die_signoff.lydrc)** — KLayout DRC sign-off deck
+
