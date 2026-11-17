@@ -65,7 +65,9 @@ Held hostage inside the "Barrel"—a pod levitating over an Armenian ravine—is
 
 ### ENGINEERING & HARDWARE FILES
 
-- **[generate_die.py](generate_die.py)** — GDSII layout generation script
-- **[config_die.json](config_die.json)** — Die configuration parameters
-- **[siva_die_signoff.lydrc](siva_die_signoff.lydrc)** — KLayout DRC sign-off deck
+Live Site: https://diogenesofyerevan.github.io/SIVAFIRST/
 
+- [generate_die.py](https://github.com/DiogenesOfYerevan/SIVAFIRST/blob/main/generate_die.py) — GDSII layout generation script
+- [config_die.json](https://github.com/DiogenesOfYerevan/SIVAFIRST/blob/main/config_die.json) — Die configuration parameters
+- [siva_die_signoff.lydrc](https://github.com/DiogenesOfYerevan/SIVAFIRST/blob/main/siva_die_signoff.lydrc) — KLayout DRC sign-off deck
+  
