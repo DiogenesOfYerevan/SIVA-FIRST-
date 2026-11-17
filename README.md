@@ -60,5 +60,5 @@ Held hostage inside the "Barrel"—a pod levitating over an Armenian ravine—is
 
 ### DOCUMENTS & SPECIFICATIONS
 * **[KAPITAL NEMO (Full Illustrated PDF)](KAPITAL%20NEMO.pdf)**
-* **[SIVA_FIRST_COMPLETE_SPEC-v2.pdf](SIVA_FIRST_COMPLETE_SPEC-v2.pdf)**
+* **[SIVA_FIRST_REV-4.3-DIGITAL-4096D_Spec_and_Manual.pdf](SIVA_FIRST_REV-4.3-DIGITAL-4096D_Spec_and_Manual.pdf)**
 * **[CERN OHL-S v2 Licence](cern_ohl_s_v2.pdf)**
