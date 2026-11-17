@@ -1,6 +1,7 @@
 
-![ KAPITAL NEMO ](cover.png)
-
+<div align="center">
+<img src="Изображение.png" alt="KAPITAL NEMO" width="600"/>
+</div>
 
 # KAPITAL NEMO
 
