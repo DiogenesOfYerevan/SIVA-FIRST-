@@ -1,0 +1,19 @@
+{
+"cell_name": "SIVA_DIGITAL_WAVE_CORE",
+"version": "REV-4.3-DIGITAL-4096D-FULL-5UM-FIXED-90UM",
+"tiles_grid_x": 4,
+"tiles_grid_y": 4,
+"tile_active_zone_size_mm": 1.5,
+"tile_pitch_um": 1620,
+"cpw_central_pin_um": 2.0,
+"cpw_gap_um": 1.0,
+"ports_spacing_um": 400,
+"seal_width_um": 10,
+"trench_width_um": 5,
+"dimple_size_um": 5,
+"dimple_grid_per_tile_x": 16,
+"dimple_grid_per_tile_y": 16,
+"dimple_pitch_um": 90,
+"die_size_total_mm": 6.6,
+"matrix_margin_um": 44
+}
