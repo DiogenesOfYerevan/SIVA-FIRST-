@@ -1,0 +1,49 @@
+{
+  "revision": "REV-4.3-DIGITAL-4096D",
+  "die_size_um": 6600,
+  "buffer_um": 60,
+  "matrix": {
+    "tiles_x": 4,
+    "tiles_y": 4,
+    "tile_pitch_um": 1620,
+    "tile_x_um": 1500
+  },
+  "dimple": {
+    "size_um": 5,
+    "pitch_um": 90,
+    "matrix_margin_um": 44,
+    "count_actual": 3136,
+    "count_min": 2304,
+    "count_max": 4096
+  },
+  "layers": {
+    "M5_Bottom": 31,
+    "M6_Top_Roof": 32,
+    "MET_PAD": 33,
+    "VIA": 38,
+    "Dimples": 45,
+    "Seal_Ring": 90,
+    "Deep_Trench": 100
+  },
+  "met_pad": {
+    "size_um": 100
+  },
+  "via": {
+    "size_um": 2,
+    "pitch_um": 10
+  },
+  "seal_ring": {
+    "width_um": 10.0
+  },
+  "deep_trench": {
+    "width_um": 5.0,
+    "spacing_to_seal_um": 1.0
+  },
+  "drc": {
+    "dbu_um": 0.001
+  },
+  "gds": {
+    "base_file": "SIVA_MATRIX_BASE.gds",
+    "cap_file": "SIVA_MATRIX_CAP.gds"
+  }
+}
