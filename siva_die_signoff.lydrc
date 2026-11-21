@@ -1,0 +1,65 @@
+# siva_die_signoff.lydrc
+#
+# SIVA FIRST (REV-4.3-DIGITAL-4096D)
+# KLayout DRC Sign-Off Deck
+# Matches: config_die.json + generate_die.py
+#
+# Run:
+# klayout -b -r siva_die_signoff.lydrc -rd report=drc_report.xml SIVA_MATRIX_BASE.gds SIVA_MATRIX_CAP.gds
+#
+# Pass = 0 error markers in drc_report.xml
+
+report("SIVA FIRST (REV-4.3-DIGITAL-4096D) Sign-Off DRC")
+
+base = input(1)
+cap = input(2)
+
+m5 = base.layer(31, 0) # M5_Bottom
+pad = base.layer(33, 0) # MET_PAD
+via = base.layer(38, 0) # VIA
+seal = base.layer(90, 0) # Seal_Ring
+trench = base.layer(100, 0) # Deep_Trench
+m6 = cap.layer(32, 0) # M6_Top_Roof
+dimple = cap.layer(45, 0) # Dimples
+seal_cap = cap.layer(90, 0) # Cap Al Seal_Ring
+
+# 1. TOPOLOGY - counts must match Spec exactly (0 errors = pass)
+puts "M6 tiles = #{m6.data.count} (must be 16)"
+puts "Dimple total = #{dimple.data.count} (must be 3136, in [2304, 4096])"
+puts "MET_PAD count = #{pad.data.count} (must be 8)"
+puts "VIA total = #{via.data.count} (must be 200)"
+
+m6.output("ERROR: M6 tiles must be 16") if m6.data.count != 16
+dimple.output("ERROR: Dimple total must be 3136") if dimple.data.count != 3136
+dimple.output("ERROR: Dimple total out of [2304, 4096]") if dimple.data.count < 2304 || dimple.data.count > 4096
+pad.output("ERROR: MET_PAD count must be 8") if pad.data.count != 8
+via.output("ERROR: VIA total must be 200") if via.data.count != 200
+
+# 2. DIMPLES - containment, spacing & margin (0.1 um tolerance)
+dimple.not_inside(m6).output("Dimple outside M6 roof")
+dimple.space(84.9.um).output("Dimple spacing < 84.9 um")
+m6.enclosing(dimple, 43.9.um).output("Dimple margin < 43.9 um")
+dimple.width(4.9.um).output("Dimple width < 4.9 um")
+dimple.sized(-2.55.um).output("Dimple width > 5.1 um")
+
+# 3. VIA + PAD - containment & dimensions
+via.not_inside(pad).output("VIA outside MET_PAD")
+via.width(1.9.um).output("VIA width < 1.9 um")
+via.sized(-1.05.um).output("VIA width > 2.1 um")
+pad.width(2.0.um).output("PAD width < 2.0 um")
+
+# 4. M5 / M6 - minimum width & isolation
+m5.width(2.0.um).output("M5 width < 2.0 um")
+m5.space(1.0.um).output("M5 spacing < 1.0 um")
+m6.space(1.0.um).output("M6 tiles touching")
+
+# 5. SEAL RING + TRENCH - exact widths + gap + bonding alignment
+seal.width(9.9.um).output("Base Seal Ring width < 9.9 um")
+seal.sized(-5.05.um).output("Base Seal Ring width > 10.1 um")
+seal_cap.width(9.9.um).output("Cap Seal Ring width < 9.9 um")
+seal_cap.sized(-5.05.um).output("Cap Seal Ring width > 10.1 um")
+(seal ^ seal_cap).output("Seal Ring mismatch between BASE and CAP")
+trench.width(4.9.um).output("Trench width < 4.9 um")
+trench.sized(-2.55.um).output("Trench width > 5.1 um")
+trench.space(seal, 0.9.um).output("Trench to Seal spacing < 0.9 um")
+m5.space(trench, 40.0.um).output("M5 to Trench spacing < 40.0 um")
